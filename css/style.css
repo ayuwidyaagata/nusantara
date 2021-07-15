@@ -1,0 +1,628 @@
+
+@import url(/css/fonts.css);
+
+html body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/*---------------pengaturan navbar--------*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: Lexend_Deca, cursive;
+    font-size: 100px;
+}
+
+h2{
+    font-family: Lexend_Deca;
+    font-size: 1rem;
+    margin: 15px;
+}
+
+h3{
+    font-family: Lexend_Deca;
+    font-size: 1rem;
+}
+
+h4{
+    color: white;
+    font-family: Lexend_Deca;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h5{
+    color: black;
+    font-family: sans-serif;
+    font-size: 40px;
+}
+
+p{
+    color: white;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+button.btn{
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-family: Lexend_Deca;
+    cursor: pointer;
+    color: white;
+}
+
+.container{
+    margin: 0 0.2vw;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: black;
+    background: transparent;
+    font-size: 30px;
+}
+/*---------------pengaturan navbar--------*/
+
+/*---------navbar------------*/
+.nav{
+    position: absolute;
+    left: -5%;
+    top: 0;
+    background: transparent;
+    z-index: 10;
+    width: 100%;
+    padding: 0 5%;
+}
+
+.nav2{
+    background: #2a9d8f;
+    padding: 0 2%;
+    height: 0;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.nav .nav-brand .logo:hover{
+    color: black;
+}
+
+.nav2 .nav-brand .logo:hover{
+    color: black;
+}
+
+.nav .nav-items{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav2 .nav-items{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: Josefin_Sans;
+    font-size: 0.85rem;
+}
+
+.nav2 .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: Josefin_Sans;
+    font-size: 0.85rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color : black;
+}
+
+.nav2 .nav-items .nav-link:hover{
+    background-color : black;
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+
+.nav2 .nav-items .nav-link:hover a{
+    color: white;
+}
+
+.nav .nav-menu{
+    display: flex;
+    padding: 0 4rem; /*-----space antar navigasi-------*/
+    justify-content: space-between;
+}
+
+.nav2 .nav-menu{
+    display: flex;
+    padding: 0 4rem; /*-----space antar navigasi-------*/
+    justify-content: space-between;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1.4rem 0;
+    display: block;
+    font-family: Lexend_Deca;
+}
+
+.nav2 .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1.4rem 0;
+    display: block;
+    font-family: Lexend_Deca;
+}
+/*----x-----navbar--------x----*/
+/*---------konten utama------------*/
+/*---------Header------------*/
+main .konten{
+    background: url(/image/borobudur.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+main .judul{
+    margin-top: 28%;
+}
+
+main .judul h1{
+    position: relative;
+    margin-bottom: 2%;
+    color: white;
+}
+
+main .konten .btn{
+    position: relative;
+    margin-left: 40%;
+    background: transparent;
+}
+
+main .konten .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/*----x------Header-------x----*/
+/*----------slide konten-----------*/
+main .slide{
+    position: absolute;
+    margin: -15% 2%;
+    margin-bottom: 10%;
+}
+
+main .slide-post .slide-konten{
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+    width: 85%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+}
+
+main .slide-post .slide-konten:hover{
+    transform: translateY(-20px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+main .slide-post .slide-konten img{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+main .slide-konten .slide-btn{
+    border: 3px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 0.8rem;
+    font-family: Lexend_Deca;
+    cursor: pointer;
+    margin: 13px;
+}
+
+main .slide-btn:hover{
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    margin-left: 27.5%;
+    margin-top: -2%;
+}
+
+/*----x------slide konten-------x----*/
+/*----x-----konten utama--------x----*/
+/*---------Wisata------------*/
+.wisata .kotak-wisata{
+    width: 80%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-top: 2px;
+    margin-top: 25%;
+    margin-bottom: 5%;
+}
+
+.wisata h3{
+    color: grey;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.wisata h5, h3{
+    margin: 30px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wisata-ikon-collum{
+    margin-bottom: 4%;
+    background: transparent;
+}
+
+.wisata-ikon-collum img{
+    width: 85%;
+}
+
+.wisata-collum{
+    flex-basis: 30%;
+    background:#2a9d8f;
+    border-radius: 10px;
+    margin-top: -12%;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.wisata-collum h4{
+    color: black;
+}
+
+.wisata-collum:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.wisata .btn2{
+    padding: 10px 25px 10px;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+/*----x-----Wista--------x----*/
+/*---------Resto------------*/
+.resto{
+    background: #2a9d8f;
+    border-radius: 50px;
+    padding: 60px 130px 85px;
+    margin-bottom: 5%;
+}
+.isi .btn2{
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 0.8rem;
+    font-family: Lexend_Deca;
+    cursor: pointer;
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+
+.btn2:hover{
+    background-color: transparent;
+    border-color: black;
+    color: black;
+}
+
+.picture img{
+    width: 90%;
+    border-radius: 10px;
+    margin: 10% 12%;
+}
+
+/*----x-----Resto-------x-----*/
+/*---------Hotel------------*/
+.hotel{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hotel h3{
+    color: grey;
+    font-family: Tahoma;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 20px;
+
+}
+
+.hotel h5, h3{
+    margin: 5px;
+}
+
+.hotel-collum{
+    flex-basis: 32%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hotel-collum img{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.layer h4{
+    bottom: 0;
+    font-size: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h4{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.btn2{
+    border-radius: 20px;
+    padding: 10px 25px 10px;
+    margin-left: 90%;
+    font-size: 0.8rem;
+    font-family: Lexend_Deca;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+/*----x-----Hotel--------x----*/
+/*---------Belanja------------*/
+.belanja{
+    padding: 100px 128px 140px;
+}
+/*----x-----Belanja------x----*/
+/*---------footer------------*/
+.footer{
+    background-color: #2a9d8f;
+    position: relative;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: 70% 50%;
+}
+
+.container2 >div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 0.9rem;
+}
+.tentangkami h2{
+    color: white;
+    margin-left: 10%;
+    font-size: 20px;
+}
+
+.tentangkami p{
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+.copy p{
+    margin-left: 50%;
+    text-align: center;
+}
+
+.follow h2{
+    color: white;
+    font-size: 20px;
+}
+
+.formnews{
+    background: #2a9d8f;
+    display: inline-block;
+}
+
+.formnews span{
+    background: black;
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+.icon{
+    padding: 0 0.9rem;
+}
+
+.icon span{
+    padding: 0 0.2rem;
+}
+
+.icon span:hover{
+    color: black;
+}
+/*----x-----footer--------x----*/
+/*-----------------------------------------halaman tentang kami---------------------------------*/
+.tentang{
+    margin-top: -5%;
+    margin-bottom: -5%;
+    margin-left: 10%;
+    padding: 100px;
+}
+.row2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row2 .isi{
+    position: relative;
+    width: 50%;
+}
+.isi h5, p{
+    color: black;
+    margin: 5% 0;
+}
+
+.isi p{
+    font-size: 14px;
+}
+
+.isi h5 span{
+    color: #2a9d8f;
+    font-size: 70px;
+}
+.imagebox img{
+    width: 50%;
+    border-radius: 10px;
+    margin: 10% 25%;
+}
+/*---------------------x--------------------halaman tentang kami-----------------x---------------*/
+/*-----------------------------------------halaman Wiata Pantai--------------------------------*/
+.pantai{
+    margin-top: -5%;
+    margin-bottom: -5%;
+    padding: 80px;
+}
+
+.isi h5{
+    font-size: 50px;
+}
+
+.pantai .imagebox img{
+    width: 80%;
+}
+/*-----------------------x------------------halaman Wiata Pantai--------------------x------------*/
+/*-----------------------------------------halaman Wiata Gunung--------------------------------*/
+.gunung{
+    margin-top: -5%;
+    margin-bottom: -5%;
+    padding: 80px;
+}
+
+.isi h5{
+    font-size: 48px;
+}
+
+.gunung .imagebox img{
+    width: 80%;
+}
+/*------------------------x-----------------halaman Wiata Gunung---------------------x-----------*/
+/*-----------------------------------------halaman Wiata Sejarah--------------------------------*/
+.sejarah{
+    margin-top: -5%;
+    margin-bottom: -5%;
+    padding: 80px;
+}
+
+.isi h5{
+    font-size: 36px;
+}
+
+.gunung .imagebox img{
+    width: 80%;
+}
+/*------------------------x-----------------halaman Wiata Sejarah--------------------x------------*/
+/*----------------------------------------halaman restoran--------------------------------*/
+.restoran{
+    margin-top: -5%;
+    margin-bottom: -5%;
+    padding: 80px;
+}
+
+.isi h5{
+    font-size: 36px;
+}
+
+.sejarah .imagebox img{
+    width: 80%;
+}
+/*------------------------x-----------------halaman restoran--------------------x------------*/
+/*-----------------------------------------halaman hotel--------------------------------*/
+.hotel{
+    margin-top: -5%;
+    margin-bottom: -5%;
+    padding: 80px;
+}
+
+.button-harga .btn3{
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 0.8rem;
+    font-family: Lexend_Deca;
+    cursor: pointer;
+    margin: 10px;
+    background-color: black;
+    color: white;
+}
+
+.button-harga .btn3:hover{
+    background-color: transparent;
+    border-color: black;
+    color: black;
+}
+/*---------------------x--------------------halaman hotel--------------x------------------*/
+/*-----------------------------------------halaman perbelanjaan--------------------------------*/
+.belanja img{
+    width: 80%;
+}
+/*---------------------x--------------------halaman perbelanjaan--------------x------------------*/
+
